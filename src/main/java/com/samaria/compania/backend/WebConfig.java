@@ -10,7 +10,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("campaniacorazon.site") // Permite el puerto 5500 de Live Server
+                .allowedOrigins("https://campaniacorazon.site") // Permite el puerto 5500 de Live Server
                 .allowedMethods("GET", "POST")
                 .allowedHeaders("*")
                 .allowCredentials(true);
